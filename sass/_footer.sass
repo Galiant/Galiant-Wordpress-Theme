@@ -1,0 +1,93 @@
+
+footer
+  font-family: 'Open Sans', sans-serif
+  background: url(http://localhost/developer/wp-content/uploads/2018/01/header.jpg) center center
+  background-size: cover
+  background-color: #22313F
+  background-blend-mode: overlay
+  padding-top: 4.5em
+  padding-bottom: 4.5em
+
+  nav
+    width: 100%
+    margin-right: auto
+    margin-left: auto
+    text-align: center
+    padding-bottom: 4em
+
+    .nav-link
+      font-weight: 700
+      color: $primary-color-text
+
+      &:nth-of-type(n+2)
+        margin-left: 2em
+
+      &:visited
+        color: $primary-color-text
+        text-decoration: none
+
+      &:hover
+        color: $primary-color
+        text-decoration: none
+      
+      &:focus
+        text-decoration: none
+
+      &:active
+        color: $primary-color
+        text-decoration: none
+
+    .hide
+      display: none
+
+  .copy
+    margin-top: .6em
+    color: $primary-color-text
+    font:
+      weight: 700
+      size: .95em
+
+    .name
+      color: $primary-color
+
+    a:visited
+      text-decoration: none
+      color: $primary-color
+
+    a:hover
+      text-decoration: underline
+
+    a:focus
+      text-decoration: none
+      
+    a:active
+      text-decoration: none
+
+  .social 
+    text-align: right
+
+  .social a
+    color: $primary-text-color
+    margin-left: .2em
+
+    &:hover
+      color: $primary-color
+
+@media screen and (max-width: 767px)
+  footer nav .nav-link:nth-of-type(n+2)
+        margin-left: .75em
+
+  .footer-contact
+    display: flex
+    flex-direction: column
+
+    .copy
+      order: 2
+      text-align: center
+      margin-top: 4em
+      border-top: 1px solid rgba($primary-color-text, .7)
+      padding-top: 4em
+
+    .social
+      order: 1
+      text-align: center !important

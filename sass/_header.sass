@@ -1,0 +1,73 @@
+
+.navbar
+  background: url(http://localhost/developer/wp-content/uploads/2018/01/header.jpg) center center
+  background-size: cover
+  background-color: #22313F
+  background-blend-mode: overlay
+  margin-bottom: 0
+  border-bottom: none
+  padding-bottom: 7em
+
+  .navbar-nav > li > a
+    font-weight: 700
+    color: $primary-color-text
+
+    &:visited
+      color: $primary-color-text
+
+    &:focus
+      color: $primary-color
+
+    &:hover
+      color: $primary-color
+
+#navbar
+  margin-top: 1.5em
+
+  .hide
+    display: none
+
+.header-text
+  font-family: 'Roboto', sans-serif
+  color: $primary-color-text
+  margin-top: 6em
+
+  h1
+    font:
+      size: 4.5em
+      weight: 700
+    margin-bottom: .4em
+    letter-spacing: .05em
+
+    span
+      display: inline-block
+      padding: .3em
+      border: .2em solid rgba($primary-color-text, .9)
+
+  p 
+    font:
+      family: 'Open Sans', sans-serif
+      weight: 700
+    letter-spacing: .05em
+    line-height: 1
+
+@media screen and (max-width: 767px)
+  .navbar
+    padding-bottom: 4em
+
+  .navbar-default .navbar-toggle
+    margin-top: .8em
+    border-color: $primary-color-text
+
+    .icon-bar
+      background-color: $primary-color-text
+
+    &:hover, &:focus, &:visited, &:active
+      background-color: rgba($primary-color-text, .0)
+
+  #navbar
+    margin-top: .6em
+    border-bottom: 1px solid $primary-color-text
+
+  .header-text
+    margin-top: 3em
