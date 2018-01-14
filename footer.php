@@ -38,11 +38,10 @@
     </div>
 </footer>
 
+<?php wp_footer(); ?>
+
 <script>
     new grid3D(document.getElementById('grid3d'));
 </script>
-
-<?php wp_footer(); ?>
-
 </body>
 </html>
